@@ -1,7 +1,7 @@
-from django import forms
+from django.forms import ModelForm
 from .models import List
 
-class ListForm(forms.ModelForm):
+class ListForm(ModelForm):
 	class Meta:
 		model = List
 		fields = ["item", "completed"]
